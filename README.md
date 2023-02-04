@@ -27,3 +27,5 @@ Contoh:
 
 *Perhaps Hepful Link*:
 https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
+
+Setelah kalian sudah mengerjakan sebisa kalian, lakukan pull request dengan format judul pull request `NIM-Nama`. Contoh: `13521058-Ghazi Akmal Fauzan`. (Opsional) Dalam deskripsi pull request, tambahkan kesan dan pesan kalian terhadap keberjalanan online learning sejauh ini, ya!
