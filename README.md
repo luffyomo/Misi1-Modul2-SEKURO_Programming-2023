@@ -4,6 +4,8 @@ Tugas dari Robin!
 
 ```!!!``` Deadline: **Sabtu, 11 Februari 2023, Pukul 23:59** ```!!!```
 
+Pertama-tama, fork repository ini.
+
 ## Tugas Review [60 point]
 Lengkapi semua file `.c` dalam folder `tugas-review`.
 
