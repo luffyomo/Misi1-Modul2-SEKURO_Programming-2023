@@ -21,17 +21,46 @@ void printArray(int array[], int size) {
 
 /* Nomor 1 [5 poin] */
 void swap(int *a, int *b) {
-    /* aksi */
+   int data1 = *a;
+    printf("\nProses Penukaran Data");
+    printf("\nA = %d, B = %d\n", *a, *b);
+    *a = *b;
+    *b = data1;
 }
 
 /* Nomor 2 [10 poin] */
 char isKabisat(int tahun) {
-	/* aksi */
+char hasil;
+    if (tahun % 4 != 0) 
+    {
+        hasil = 'G';
+    }
+    else if (tahun % 100 != 0) 
+    {
+        hasil = 'Y';
+    }
+    else if (tahun % 400 != 0) 
+    {
+        hasil = 'G';
+    }
+    else 
+    {
+        hasil = 'Y';
+    }
+    tahun = hasil;
 }
 
 /* Nomor 3 [15 point] */
 void transformArray(int *ptr, int size) {
-    /* aksi */
+   for (int i = 0; i < size; i++) {
+        if (ptr[i] % 2 != 0) {
+            ptr[i] = 0;   
+        }
+        else 
+        {
+           ptr[i] = 1;
+        }
+    }
 }
 
 int main() {
@@ -77,16 +106,16 @@ int main() {
     /* Lengkapi prosedur checkArray() yang mengubah isi sebuah array of integer */
     /* Jika elemen dari array tersebut bilangan ganjil, maka nilai elemen tersebut berubah menjadi 0 */
     /* Jika elemen dari array tersebut bilangan genap, maka nilai elemen tersebut berubah menjadi 1 */
-    int array[SIZE_OF_ARRAY] = {19, 62, 31, 1};
+    int array[4] = {19, 62, 31, 1};
 
     printf("Sebelum: ");
-    printArray(array, SIZE_OF_ARRAY);
+    printArray(array, 4);
     printf("\n");
 
-    transformArray(array, SIZE_OF_ARRAY);
+    transformArray(array, 4);
 
     printf("Setelah: ");
-    printArray(array, SIZE_OF_ARRAY);
+    printArray(array, 4);
     printf("\n");
 
     // Expected Output:
